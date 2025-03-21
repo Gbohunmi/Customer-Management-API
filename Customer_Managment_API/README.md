@@ -1,0 +1,1 @@
+A customer management system where businesses can track their customers and the corresponding orders they place. This web application will provide a clean, intuitive interface along with RESTful APIs for integration with other systems
