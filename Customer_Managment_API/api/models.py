@@ -9,6 +9,7 @@ class CustomUser(AbstractUser):
     
     # Setting email as the unique identifier for authentication
     USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = []
 
     def __str__(self):
         return self.email
@@ -17,7 +18,7 @@ class CustomUser(AbstractUser):
 class Customer(models.Model):
     name = models.CharField(max_length=40, blank=False)
     email = models.EmailField(blank=True)
-    phone_number = models.IntegerField(max_length=13)
+    phone_number = models.IntegerField()
     address = models.TextField(blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

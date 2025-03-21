@@ -76,13 +76,8 @@ WSGI_APPLICATION = 'Customer_Managment_API.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'CMS_API',
-        'USER': 'root',
-        'PASSWORD': 'MyN3wP4ssw0rd',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
