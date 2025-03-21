@@ -129,4 +129,4 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Setting the User model to our CustomUder Model in api
-AUTH_USER_MODEL = 'api.CustomUser'
+
