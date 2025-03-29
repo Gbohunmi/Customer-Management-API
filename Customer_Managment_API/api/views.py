@@ -14,7 +14,7 @@ from rest_framework.permissions import IsAuthenticated
 # Create your views here.
 
 class CustomerModelViewSet(viewsets.ModelViewSet):
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     queryset = Customer.objects.all()
     serializer_class = CustomerSerializer
@@ -29,7 +29,7 @@ class CustomerModelViewSet(viewsets.ModelViewSet):
 
 
 class OrderModelViewSet(viewsets.ModelViewSet):
-    #permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated]
 
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
