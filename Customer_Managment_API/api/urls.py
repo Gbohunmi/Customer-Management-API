@@ -1,6 +1,7 @@
 from django.urls import path, include
 from .views import (CustomerModelViewSet,
-                    OrderModelViewSet)
+                    OrderModelViewSet,
+                    UserRegistrationView)
 
 from rest_framework.routers import DefaultRouter
     
@@ -16,6 +17,7 @@ router.register(r'orders', OrderModelViewSet, basename='order')
 
 
 urlpatterns = [
+    path('register/', UserRegistrationView.as_view(), name='register'),
     path('', include(router.urls)),
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),

@@ -105,14 +105,14 @@ Follow these steps to set up the project on your local machine:
 5.  **Create a Superuser:**
     This user is needed to log in and obtain JWT tokens initially.
     ```bash
-    python manage.py createsuperuser
+    python3 manage.py createsuperuser
     ```
     You will be prompted to enter an email address (use this for login), and a password.
 
 6.  **Create a User:**
     This user is needed to log in and obtain JWT tokens initially.
     ```bash
-    python manage.py create_user
+    python3 manage.py create_user
     ```
     You will be prompted to enter an email address (use this for login), and a password.
 
