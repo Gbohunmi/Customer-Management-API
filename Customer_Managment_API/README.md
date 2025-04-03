@@ -109,6 +109,13 @@ Follow these steps to set up the project on your local machine:
     ```
     You will be prompted to enter an email address (use this for login), and a password.
 
+6.  **Create a User:**
+    This user is needed to log in and obtain JWT tokens initially.
+    ```bash
+    python manage.py create_user
+    ```
+    You will be prompted to enter an email address (use this for login), and a password.
+
 ## Running the Project
 
 1.  **Start the Development Server:**
