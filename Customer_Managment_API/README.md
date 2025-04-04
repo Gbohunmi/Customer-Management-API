@@ -122,13 +122,13 @@ Follow these steps to set up the project on your local machine:
     ```bash
     python manage.py runserver
     ```
-2.  The API will be accessible at `http://127.0.0.1:8000/`.
+2.  The API will be accessible at `gbohunmi.pythonanywhere.com`.
 
 ## API Endpoints
 
 All endpoints under `/api/` except for token endpoints require authentication using a JWT Bearer Token in the `Authorization` header.
 
-**Base URL:** `http://127.0.0.1:8000/api/`
+**Base URL:** `http://gbohunmi.pythonanywhere.com/api/`
 
 ### Authentication
 
@@ -164,7 +164,7 @@ All endpoints under `/api/` except for token endpoints require authentication us
 *   **Methods:**
     *   `GET`: List all orders.
         *   *Filtering:* `?customer=...` (use customer ID), `?order_date=...`, `?status=paid|unpaid`, `?total=...`
-        *   *Searching:* `?search=...` (searches customer relation - likely by customer ID or name depending on DRF setup)
+        *   *Searching:* `?search=...` (searches customer relation - likely by customer ID or name depending on request)
         *   *Ordering:* `?ordering=customer`, `?ordering=status`, `?ordering=-total`
     *   `POST`: Create a new order.
         *   **Request Body:** `{ "customer": <customer_id>, "status": "paid|unpaid", "total": "..." }`
